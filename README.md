@@ -14,11 +14,11 @@ Simple VHDL & Verilog examples.
 
 3.  Generate executable file:
 
-        ghdl –e <design>_tb
+        ghdl –e --ieee=synopsys <design>_tb
 
 4.  Run the simulation:
 
-        ghdl –r <design>_tb --vcd=<design>_tb.vcd
+        ghdl –r --ieee=synopsys <design>_tb --vcd=<design>_tb.vcd
 
 5.  View the waveform:
 
