@@ -1,3 +1,5 @@
 .library_mapping
 .project
 .settings
+
+*.cf
