@@ -25,8 +25,8 @@ begin
     DUT : OneHotDecoder3to8 port map(ABC => ABC_TB, F => F_TB);
     
     process
-        file Fin  : TEXT open READ_MODE is "onehotdecoder3to8_input.txt";
-        file Fout : TEXT open WRITE_MODE is "onehotdecoder3to8_output.txt";
+        file Fin  : TEXT open READ_MODE is "onehot_decoder_3to8_input.txt";
+        file Fout : TEXT open WRITE_MODE is "onehot_decoder_3to8_output.txt";
         
         variable current_read_line  : line;
         variable current_read_field : std_logic_vector(2 downto 0);
