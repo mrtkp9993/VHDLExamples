@@ -1,20 +1,20 @@
 library ieee;
 use ieee.std_logic_1164.all;
 
-entity SOPCircuit is
-    port(
-        ABC : in  std_logic_vector(2 downto 0);
-        F   : out std_logic
+entity sop_circuit is
+  port(
+    ABC_in : in  std_logic_vector(2 downto 0);
+    F_out  : out std_logic
     );
 end entity;
 
-architecture SOPCircuit_arch of SOPCircuit is
+architecture behavioral of sop_circuit is
 begin
-    SOP_case : process(ABC)
-    begin
-        case ABC is
-            when "000" | "010" | "110" => F <= '1';
-            when others                => F <= '0';
-        end case;
-    end process;
+  sop_case : process(ABC_in)
+  begin
+    case ABC_in is
+      when "000" | "010" | "110" => F_out <= '1';
+      when others                => F_out <= '0';
+    end case;
+  end process;
 end architecture;
