@@ -8,7 +8,7 @@ use STD.textio.all;
 entity tb_sop_circuit is
 end entity;
 
-architecture behavioral of tb_sop_circuit is
+architecture behavior of tb_sop_circuit is
 
   component sop_circuit
     port(

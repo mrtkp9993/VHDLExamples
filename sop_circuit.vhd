@@ -8,7 +8,7 @@ entity sop_circuit is
     );
 end entity;
 
-architecture behavioral of sop_circuit is
+architecture behavior of sop_circuit is
 begin
   sop_case : process(ABC_in)
   begin

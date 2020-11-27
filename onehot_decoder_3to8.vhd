@@ -8,7 +8,7 @@ entity onehot_decoder_3to8 is
     );
 end entity;
 
-architecture behavioral of onehot_decoder_3to8 is
+architecture behavior of onehot_decoder_3to8 is
 begin
   onehot_decoder_case : process(ABC_in)
   begin

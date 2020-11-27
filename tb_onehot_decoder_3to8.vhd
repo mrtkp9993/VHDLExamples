@@ -8,7 +8,7 @@ use STD.textio.all;
 entity tb_onehot_decoder_3to8 is
 end entity;
 
-architecture behavioral of tb_onehot_decoder_3to8 is
+architecture behavior of tb_onehot_decoder_3to8 is
 
   component onehot_decoder_3to8
     port (

@@ -9,7 +9,7 @@ entity mux_4to1 is
     );
 end entity;
 
-architecture behavioral of mux_4to1 is
+architecture behavior of mux_4to1 is
 begin
   DUT : process(ABCD_in, Sel_in)
   begin

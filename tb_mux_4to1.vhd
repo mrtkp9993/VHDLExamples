@@ -8,7 +8,7 @@ use STD.textio.all;
 entity tb_mux_4to1 is
 end entity;
 
-architecture behavioral of tb_mux_4to1 is
+architecture behavior of tb_mux_4to1 is
 
   component mux_4to1
     port (
