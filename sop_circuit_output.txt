@@ -1,8 +1,0 @@
-Input: ABC_TB=000 DUT Output: F_TB=1
-Input: ABC_TB=001 DUT Output: F_TB=0
-Input: ABC_TB=010 DUT Output: F_TB=1
-Input: ABC_TB=011 DUT Output: F_TB=0
-Input: ABC_TB=100 DUT Output: F_TB=0
-Input: ABC_TB=101 DUT Output: F_TB=0
-Input: ABC_TB=110 DUT Output: F_TB=1
-Input: ABC_TB=111 DUT Output: F_TB=0
