@@ -8,14 +8,14 @@ use STD.textio.all;
 entity tb_mux_4to1 is
 end entity;
 
-architecture behavior of tb_mux_4to1 is
+architecture bench of tb_mux_4to1 is
 
   component mux_4to1
     port (
-      ABCD_in : in  std_logic_vector(3 downto 0);
-      Sel_in  : in  std_logic_vector(1 downto 0);
+      ABCD_in : in std_logic_vector(3 downto 0);
+      Sel_in  : in std_logic_vector(1 downto 0);
       F_out   : out std_logic
-      );
+    );
   end component;
 
   signal ABCD_TB_in : std_logic_vector(3 downto 0);

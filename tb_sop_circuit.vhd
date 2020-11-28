@@ -8,13 +8,13 @@ use STD.textio.all;
 entity tb_sop_circuit is
 end entity;
 
-architecture behavior of tb_sop_circuit is
+architecture bench of tb_sop_circuit is
 
   component sop_circuit
-    port(
-      ABC_in : in  std_logic_vector(2 downto 0);
+    port (
+      ABC_in : in std_logic_vector(2 downto 0);
       F_out  : out std_logic
-      );
+    );
   end component;
 
   signal ABC_TB_in : std_logic_vector(2 downto 0);

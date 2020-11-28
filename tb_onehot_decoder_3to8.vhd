@@ -8,13 +8,13 @@ use STD.textio.all;
 entity tb_onehot_decoder_3to8 is
 end entity;
 
-architecture behavior of tb_onehot_decoder_3to8 is
+architecture bench of tb_onehot_decoder_3to8 is
 
   component onehot_decoder_3to8
     port (
-      ABC_in : in  std_logic_vector(2 downto 0);
+      ABC_in : in std_logic_vector(2 downto 0);
       F_out  : out std_logic_vector(7 downto 0)
-      );
+    );
   end component;
 
   signal ABC_TB_in : std_logic_vector(2 downto 0);
