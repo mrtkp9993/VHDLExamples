@@ -11,9 +11,9 @@ end entity;
 architecture bench of tb_full_adder is
   component full_adder
     port (
-      x_in, y_in, c_in : in  std_logic;
+      x_in, y_in, c_in : in std_logic;
       s_out, c_out     : out std_logic
-      );
+    );
   end component;
 
   signal x_tb_in  : std_logic;
@@ -28,7 +28,7 @@ begin
 
   process
 
-    file Fin : text open read_mode is "full_adder_input.txt";
+    file Fin : text open read_mode is "tb/full_adder_input.txt";
 
     variable current_read_line   : line;
     variable current_read_field1 : std_logic;

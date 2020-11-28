@@ -25,7 +25,7 @@ begin
   DUT : onehot_decoder_3to8 port map(ABC_in => ABC_TB_in, F_out => F_TB_out);
 
   process
-    file Fin  : text open read_mode is "onehot_decoder_3to8_input.txt";
+    file Fin  : text open read_mode is "tb/onehot_decoder_3to8_input.txt";
     file Fout : text open write_mode is "onehot_decoder_3to8_output.txt";
 
     variable current_read_line  : line;

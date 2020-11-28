@@ -25,7 +25,7 @@ begin
   DUT : sop_circuit port map(ABC_in => ABC_TB_in, F_out => F_TB_out);
 
   process
-    file Fin  : text open read_mode is "sop_circuit_input.txt";
+    file Fin  : text open read_mode is "tb/sop_circuit_input.txt";
     file Fout : text open write_mode is "sop_circuit_output.txt";
 
     variable current_read_line  : line;

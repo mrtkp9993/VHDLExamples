@@ -27,7 +27,7 @@ begin
   DUT : mux_4to1 port map(ABCD_in => ABCD_TB_in, Sel_in => Sel_TB_in, F_out => F_TB_out);
 
   process
-    file Fin : text open read_mode is "mux_4to1_tests.txt";
+    file Fin : text open read_mode is "tb/mux_4to1_tests.txt";
 
     variable current_read_line   : line;
     variable current_read_field1 : std_logic_vector(0 to 3);
