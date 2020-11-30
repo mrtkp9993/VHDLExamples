@@ -9,7 +9,7 @@ entity tb_parity_generator is
 end entity;
 
 architecture bench of tb_parity_generator is
-  component parity_generator
+  component parity_generator is
     generic(
       length_g : integer   := 8;
       parity_g : std_logic := '0'       -- '0' for even, '1' for odd parity 
