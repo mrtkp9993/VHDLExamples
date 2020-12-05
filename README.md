@@ -1,6 +1,6 @@
 # VHDL Examples
 
-Simple VHDL & Verilog examples.
+Simple VHDL examples.
 
 ## How to run
 
